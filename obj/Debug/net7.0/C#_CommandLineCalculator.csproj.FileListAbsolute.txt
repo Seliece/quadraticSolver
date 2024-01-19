@@ -1,0 +1,15 @@
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.csproj.AssemblyReference.cache
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.AssemblyInfoInputs.cache
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.AssemblyInfo.cs
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.csproj.CoreCompileInputs.cache
+C:\Programming\C#_CommandLineCalculator\bin\Debug\net7.0\C#_CommandLineCalculator.exe
+C:\Programming\C#_CommandLineCalculator\bin\Debug\net7.0\C#_CommandLineCalculator.deps.json
+C:\Programming\C#_CommandLineCalculator\bin\Debug\net7.0\C#_CommandLineCalculator.runtimeconfig.json
+C:\Programming\C#_CommandLineCalculator\bin\Debug\net7.0\C#_CommandLineCalculator.dll
+C:\Programming\C#_CommandLineCalculator\bin\Debug\net7.0\C#_CommandLineCalculator.pdb
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.dll
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\refint\C#_CommandLineCalculator.dll
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.pdb
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\C#_CommandLineCalculator.genruntimeconfig.cache
+C:\Programming\C#_CommandLineCalculator\obj\Debug\net7.0\ref\C#_CommandLineCalculator.dll

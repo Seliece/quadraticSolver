@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 
@@ -65,11 +66,11 @@ namespace CommandLineCalculator
                     return string.Empty;
 
                 case EquationType.intersect:
-                    intersectParse(input);
+                    IntersectParse(input);
                     return string.Empty;
 
                 case EquationType.top:
-                    topParse(input);
+                    TopParse(input);
                     return string.Empty;
 
                 default:
@@ -77,19 +78,28 @@ namespace CommandLineCalculator
             }
         }
 
-        static string NormalParse(string input) {
+        static int[] NormalParse(string input) {
             //ax^2+bx+c
-            return string.Empty;
+            int[] nums = new int[3];
+            int locationA,locationB,locationC;
+
+            locationA = input.IndexOf("x^2");
+            nums[0] = int.Parse(input.Substring(0, locationA));
+            Console.WriteLine(nums[0]);
+            locationB = input.IndexOf("x", locationA + 3);
+            nums[1] = int.Parse(input.Substring(locationA + 3, locationB - (locationA + 3)));
+            Console.WriteLine(nums[1]);
+            return new int[0];
         }
 
-        static string intersectParse(string input) {
+        static int[] IntersectParse(string input) {
             //(x-p)(x-q)
-            return string.Empty;
+            return new int[0];
         }
 
-        static string topParse(string input) {
+        static int[] TopParse(string input) {
             //(x-g)^2+p
-            return string.Empty;
+            return new int[0];
         }
     }
 }

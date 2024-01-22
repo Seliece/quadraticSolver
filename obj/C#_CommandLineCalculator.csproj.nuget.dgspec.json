@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programming\\C#_commandLineCalculator\\C#_CommandLineCalculator.csproj": {}
+    "C:\\Programming\\C#_CommandLineCalculator\\C#_CommandLineCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Programming\\C#_commandLineCalculator\\C#_CommandLineCalculator.csproj": {
+    "C:\\Programming\\C#_CommandLineCalculator\\C#_CommandLineCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\C#_commandLineCalculator\\C#_CommandLineCalculator.csproj",
+        "projectUniqueName": "C:\\Programming\\C#_CommandLineCalculator\\C#_CommandLineCalculator.csproj",
         "projectName": "C#_CommandLineCalculator",
-        "projectPath": "C:\\Programming\\C#_commandLineCalculator\\C#_CommandLineCalculator.csproj",
+        "projectPath": "C:\\Programming\\C#_CommandLineCalculator\\C#_CommandLineCalculator.csproj",
         "packagesPath": "C:\\Users\\rensn\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\C#_commandLineCalculator\\obj\\",
+        "outputPath": "C:\\Programming\\C#_CommandLineCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

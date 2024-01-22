@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RbLZzNn3X6gMHdxTWFo9Z0Fe4qoh3vooTihaI5edxfM9eTdybQlo9dbKcBwWSmDHnAlJ7kM/CSeGu27mE5fjYA==",
+  "dgSpecHash": "1Pgk65bPSUF1jzjHL30JVsM2oOV8OP/3FTEdd2TeNZt8lAGBIJJZBxV3h+ydYElTHssEGHiOVHBbBEV8vw/lxA==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C#_CommandLineCalculator\\C#_CommandLineCalculator.csproj",
+  "projectFilePath": "C:\\Programming\\C#_commandLineCalculator\\C#_CommandLineCalculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -10,7 +10,8 @@ namespace CommandLineCalculator
             {
                 normal,
                 top,
-                intersect
+                intersect,
+                invalid
             }
     public class Program {
         public static void Main(String[] args) {
@@ -54,7 +55,7 @@ namespace CommandLineCalculator
             }
             
             Console.WriteLine("invalid input");
-            return 0;
+            return EquationType.invalid;
         }
         
         public static string Parse(string input, EquationType type) {
@@ -85,21 +86,47 @@ namespace CommandLineCalculator
 
             locationA = input.IndexOf("x^2");
             nums[0] = int.Parse(input.Substring(0, locationA));
-            Console.WriteLine(nums[0]);
+
             locationB = input.IndexOf("x", locationA + 3);
             nums[1] = int.Parse(input.Substring(locationA + 3, locationB - (locationA + 3)));
-            Console.WriteLine(nums[1]);
-            return new int[0];
+
+            locationC = input.IndexOf("+", locationB + 1); 
+            if (locationC == -1) {
+
+                locationC = input.IndexOf("-", locationB + 1);
+            }
+            nums[2] = int.Parse(input.Substring(locationB + 1));
+            
+            Console.WriteLine($"A={nums[0]},B={nums[1]},C={nums[2]}");
+            return nums;
         }
 
         static int[] IntersectParse(string input) {
             //(x-p)(x-q)
-            return new int[0];
+            int[] nums = new int[2];
+            int locationP;
+
+            locationP = input.IndexOf(")(");
+            nums[0] = int.Parse(input.Substring(2,locationP -2));
+            
+            nums[1] = int.Parse(input.Substring(locationP + 3, input.Length -2 - (locationP + 2)));
+            
+            Console.WriteLine($"P={nums[0]},Q={nums[1]}");
+            return nums;
         }
 
         static int[] TopParse(string input) {
             //(x-g)^2+p
-            return new int[0];
+            int[] nums = new int[2];
+            int locationG;
+
+            locationG = input.IndexOf(")^2");
+            nums[0] = int.Parse(input.Substring(2,locationG - 2));
+
+            nums[1] = int.Parse(input.Substring(locationG + 3));
+
+            Console.WriteLine($"G={nums[0]},P={nums[1]}");
+            return nums;  
         }
     }
 }

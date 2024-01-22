@@ -78,14 +78,17 @@ namespace CommandLineCalculator
         }
 
         static string NormalParse(string input) {
+            //ax^2+bx+c
             return string.Empty;
         }
 
         static string intersectParse(string input) {
+            //(x-p)(x-q)
             return string.Empty;
         }
 
         static string topParse(string input) {
+            //(x-g)^2+p
             return string.Empty;
         }
     }

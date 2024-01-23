@@ -26,8 +26,65 @@ namespace CommandLineCalculator
 
             string input = args[0];
             EquationType equationType = Parser.Detector(input);
-            Parser.Parse(input, equationType);
-        }   
+            int[] nums = Parser.Parse(input, equationType);
+            string[] equations = Changer.getRemainingEquations(nums, equationType);
+        }
+
+        
+    }
+
+    public static class Changer {
+        public static string[] getRemainingEquations(int[] nums, EquationType type) {
+
+            string[] equations = new string[2];
+            
+            switch (type)
+            {
+                case EquationType.normal:
+                    equations[0] = normalToTop(nums);
+                    equations[1] = normalToIntersect(nums);
+                    return equations;
+
+                case EquationType.top:
+                    equations[0] = topToNormal(nums);
+                    equations[1] = topToIntersect(nums);
+                    return equations;
+
+                case EquationType.intersect:
+                    equations[0] = intersectToNormal(nums);
+                    equations[1] = intersectToTop(nums);
+                    return equations;
+
+                default:
+                    return Array.Empty<string>(); 
+            }
+        }
+        //1. ax^2+bx+c
+        //2. (x-p)(x-q)
+        //3. (x-g)^2+p
+        public static string normalToTop(int[] nums) {
+
+        }
+
+        public static string normalToIntersect(int[] nums) {
+
+        }
+
+        public static string topToNormal(int[] nums) {
+
+        }
+
+        public static string topToIntersect(int[] nums) {
+
+        }
+
+        public static string intersectToNormal(int[] nums) {
+
+        }
+
+        public static string intersectToTop(int[] nums) {
+
+        }
     }
     public static class Parser {
         //1. ax^2+bx+c
@@ -58,24 +115,22 @@ namespace CommandLineCalculator
             return EquationType.invalid;
         }
         
-        public static string Parse(string input, EquationType type) {
+        public static int[] Parse(string input, EquationType type) {
             
             switch (type)
             {
                 case EquationType.normal:
-                    NormalParse(input);
-                    return string.Empty;
+                    return NormalParse(input);
+                    
 
                 case EquationType.intersect:
-                    IntersectParse(input);
-                    return string.Empty;
+                    return IntersectParse(input);
 
                 case EquationType.top:
-                    TopParse(input);
-                    return string.Empty;
+                    return TopParse(input);
 
                 default:
-                    return string.Empty;
+                    return Array.Empty<int>();
             }
         }
 

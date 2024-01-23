@@ -28,6 +28,8 @@ namespace CommandLineCalculator
             EquationType equationType = Parser.Detector(input);
             int[] nums = Parser.Parse(input, equationType);
             string[] equations = Changer.getRemainingEquations(nums, equationType);
+            Console.WriteLine(equations[0]);
+            Console.WriteLine(equations[1]);
         }
 
         
@@ -63,27 +65,33 @@ namespace CommandLineCalculator
         //2. (x-p)(x-q)
         //3. (x-g)^2+p
         public static string normalToTop(int[] nums) {
-
+            return string.Empty;
         }
 
         public static string normalToIntersect(int[] nums) {
-
+            //x=(-b+-sqrt(b^2-4ac))/2a
+            float xMin, xMax;
+            float D = (float)Math.Sqrt((nums[1]*nums[1])-4*nums[0]*nums[2]);
+            Console.WriteLine($"D={D}");
+            xMin = (-nums[1] - D)/2*nums[0];
+            xMax = (-nums[1] + D)/2*nums[0];
+            return $"(x-{xMin})(x-{xMax})";
         }
 
         public static string topToNormal(int[] nums) {
-
+            return string.Empty;
         }
 
         public static string topToIntersect(int[] nums) {
-
+            return string.Empty;
         }
 
         public static string intersectToNormal(int[] nums) {
-
+            return string.Empty;
         }
 
         public static string intersectToTop(int[] nums) {
-
+            return string.Empty;
         }
     }
     public static class Parser {
